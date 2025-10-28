@@ -142,3 +142,12 @@ uv run setup.py
 ```bash
 streamlit run app.py
 ```
+
+---
+
+## 🎬 Demo Video  
+[![Watch on YouTube](https://i.ytimg.com/vi/xSJRbmtMBGI/hqdefault.jpg)](https://x.com/DebasisPan54565/status/1983194370171121886?t=nY5EfeqU88pFuD9dmQU8aA&s=19)
+
+## Author
+
+Built with 💖 by [DebasisPanda](https://github.com/guddu-debasis)
