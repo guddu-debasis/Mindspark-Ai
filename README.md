@@ -1,9 +1,9 @@
-⚡MindSpark AI
+# ⚡MindSpark AI
 
 MindSpark AI is an intelligent learning assistant that transforms how you study. It generates AI-powered flashcards and dynamic quizzes on any topic in seconds — helping learners, educators, and professionals retain knowledge smarter and faster.
 Built with Streamlit and MindsDB, MindSpark AI merges simplicity with intelligence.
 
-🎯 Use Case
+# 🎯 Use Case
 
 Traditional studying methods are often time-consuming and static.
 MindSpark AI automates the learning lifecycle:
@@ -18,8 +18,8 @@ Admins (or educators) can manage topics and curate the learning experience.
 
 Result: Personalized learning, better memory retention, and adaptive AI-driven insights.
 
-✨ Features
-🧠 Flashcard Generator
+# ✨ Features
+## 🧠 Flashcard Generator
 
 Instantly create topic-based flashcards with AI.
 
@@ -27,7 +27,7 @@ Flip animations for a modern, engaging experience.
 
 Save and manage flashcards in your Knowledge Base.
 
-🧩 Quiz Creator
+## 🧩 Quiz Creator
 
 Auto-generate multiple-choice questions (MCQs).
 
@@ -35,7 +35,7 @@ See instant correct answers and explanations.
 
 Review quizzes for better understanding.
 
-📊 Knowledge Base
+## 📊 Knowledge Base
 
 Store and manage all topics in one place.
 
@@ -43,7 +43,7 @@ Delete, view, or explore previous AI-generated content.
 
 Organize by subject or difficulty.
 
-🎨 Modern Streamlit UI
+## 🎨 Modern Streamlit UI
 
 Animated layout with smooth transitions.
 
@@ -51,7 +51,7 @@ Easy navigation between Home, Flashcards, and Quiz.
 
 Responsive design for desktop and tablet users.
 
-🤖 AI Engine
+## 🤖 AI Engine
 
 MindSpark AI uses MindsDB as its AI intelligence layer to:
 
@@ -61,17 +61,17 @@ Produce structured quizzes with correct answers.
 
 Learn from user inputs to refine topic quality over time.
 
-🧱 Technology Stack
+# 🧱 Technology Stack
 Python (Best Programming Language :P)
 Streamlit (UI Library)
 MindsDB (AI and KB Layer)
 ChromaDB (Vector DB)
 Nebius (For LLM and Embedding model)
 
-🧠 Architecture
+# 🧠 Architecture
 
 ![alt text](image.png)
-📚 Knowledge Base Schema
+# 📚 Knowledge Base Schema
 
 Name: flashcards_kb
 
@@ -79,7 +79,7 @@ content_columns = ["topic", "question", "answer"]
 metadata_columns = ["type", "difficulty", "category"]
 id_column = "id"
 
-⚙️ Installation
+# ⚙️ Installation
 Clone the GitHub repository
 git clone https://github.com/yourusername/mindspark-ai.git
 cd mindspark-ai
