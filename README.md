@@ -62,8 +62,7 @@ MindSpark AI uses MindsDB as its AI intelligence layer to:
 
 ## 🧠 Architecture
 
-![Architecture Diagram](path/to/architecture.png)
-*alt text*
+![alt text](image-1.png)
 
 ---
 
