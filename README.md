@@ -127,7 +127,17 @@ pip install -r requirements.txt
 
 ---
 
-### 🚀 4. Run the Streamlit App
+###  4. Setup project, environment variables and run setup script
+```bash
+uv sync
+
+cp .env.example .env # add your nebius api key from nebius ai cloud to NEBIUS_API_KEY var
+
+uv run setup.py
+```
+---
+
+### 🚀 5. Run the Streamlit App
 
 ```bash
 streamlit run app.py
