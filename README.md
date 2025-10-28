@@ -146,7 +146,7 @@ streamlit run app.py
 ---
 
 ## 🎬 Demo Video  
-[![Watch on YouTube](https://i.ytimg.com/vi/xSJRbmtMBGI/hqdefault.jpg)](https://x.com/DebasisPan54565/status/1983194370171121886?t=nY5EfeqU88pFuD9dmQU8aA&s=19)
+[![Watch on YouTube](e:\ChatGPT Image Oct 28, 2025, 03_51_55 PM.png)](https://x.com/DebasisPan54565/status/1983194370171121886?t=nY5EfeqU88pFuD9dmQU8aA&s=19)
 
 ## Author
 
