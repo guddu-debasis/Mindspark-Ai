@@ -1,96 +1,135 @@
-# ⚡MindSpark AI
+# ⚡ **MindSpark AI**
 
-MindSpark AI is an intelligent learning assistant that transforms how you study. It generates AI-powered flashcards and dynamic quizzes on any topic in seconds — helping learners, educators, and professionals retain knowledge smarter and faster.
-Built with Streamlit and MindsDB, MindSpark AI merges simplicity with intelligence.
+**MindSpark AI** is an intelligent learning assistant that transforms how you study.  
+It generates AI-powered flashcards and dynamic quizzes on any topic in seconds — helping learners, educators, and professionals retain knowledge smarter and faster.  
+Built with **Streamlit** and **MindsDB**, MindSpark AI merges simplicity with intelligence.
 
-# 🎯 Use Case
+---
 
-Traditional studying methods are often time-consuming and static.
+## 🎯 Use Case
+
+Traditional studying methods are often time-consuming and static.  
 MindSpark AI automates the learning lifecycle:
 
-Learners enter any topic (e.g., "Neural Networks" or "World War II").
+- Learners enter any topic (e.g., "Neural Networks" or "World War II").
+- The system instantly generates interactive flashcards and quizzes powered by AI.
+- Knowledge is stored, searchable, and reusable for consistent revision.
+- Admins (or educators) can manage topics and curate the learning experience.
 
-The system instantly generates interactive flashcards and quizzes powered by AI.
+ Result: Personalized learning, better memory retention, and adaptive AI-driven insights.
 
-Knowledge is stored, searchable, and reusable for consistent revision.
+---
 
-Admins (or educators) can manage topics and curate the learning experience.
+## ✨ Features
 
-Result: Personalized learning, better memory retention, and adaptive AI-driven insights.
+### 🧠 Flashcard Generator
+- Instantly create topic-based flashcards with AI.
+- Flip animations for a modern, engaging experience.
+- Save and manage flashcards in your Knowledge Base.
 
-# ✨ Features
-## 🧠 Flashcard Generator
+### 🧩 Quiz Creator
+- Auto-generate multiple-choice questions (MCQs).
+- See instant correct answers and explanations.
+- Review quizzes for better understanding.
 
-Instantly create topic-based flashcards with AI.
+### 📊 Knowledge Base
+- Store and manage all topics in one place.
+- Delete, view, or explore previous AI-generated content.
+- Organize by subject or difficulty.
 
-Flip animations for a modern, engaging experience.
+### 🎨 Modern Streamlit UI
+- Animated layout with smooth transitions.
+- Easy navigation between Home, Flashcards, and Quiz.
+- Responsive design for desktop and tablet users.
 
-Save and manage flashcards in your Knowledge Base.
-
-## 🧩 Quiz Creator
-
-Auto-generate multiple-choice questions (MCQs).
-
-See instant correct answers and explanations.
-
-Review quizzes for better understanding.
-
-## 📊 Knowledge Base
-
-Store and manage all topics in one place.
-
-Delete, view, or explore previous AI-generated content.
-
-Organize by subject or difficulty.
-
-## 🎨 Modern Streamlit UI
-
-Animated layout with smooth transitions.
-
-Easy navigation between Home, Flashcards, and Quiz.
-
-Responsive design for desktop and tablet users.
-
-## 🤖 AI Engine
-
+### 🤖 AI Engine
 MindSpark AI uses MindsDB as its AI intelligence layer to:
+- Generate accurate, context-aware flashcards.
+- Produce structured quizzes with correct answers.
+- Learn from user inputs to refine topic quality over time.
 
-Generate accurate, context-aware flashcards.
+---
 
-Produce structured quizzes with correct answers.
+## Technology
 
-Learn from user inputs to refine topic quality over time.
+- [Python](https://www.python.org/) (Best Programming Language :P)
+- [Streamlit](https://streamlit.io/) (UI Library)
+- [MindsDB](https://mindsdb.com/) (AI and KB Layer)
+- [ChromaDB](https://www.trychroma.com/) (Vector DB)
+- [Nebius](https://nebius.com/) (For LLM and Embedding model)
 
-# 🧱 Technology Stack
-Python (Best Programming Language :P)
-Streamlit (UI Library)
-MindsDB (AI and KB Layer)
-ChromaDB (Vector DB)
-Nebius (For LLM and Embedding model)
+---
 
-# 🧠 Architecture
+## 🧠 Architecture
 
-![alt text](image.png)
-# 📚 Knowledge Base Schema
+![Architecture Diagram](path/to/architecture.png)
+*alt text*
 
-Name: flashcards_kb
+---
 
+## 📚 Knowledge Base Schema
+
+Name: `flashcards_kb`
+
+```
 content_columns = ["topic", "question", "answer"]
 metadata_columns = ["type", "difficulty", "category"]
 id_column = "id"
+```
+---
 
-# ⚙️ Installation
-Clone the GitHub repository
+### Knowledge Base Evaluation metrics
+
+| avg_relevancy | avg_relevance_score_by_k | avg_first_relevant_position | mean_mrr | hit_at_k | bin_precision_at_k | avg_entropy | avg_ndcg | avg_query_time | id  | name | created_at |
+| ------------- | ------------------------ | --------------------------- | -------- | -------- | ------------------ | ----------- | -------- | -------------- | --- | ---- | ---------- |
+| 0.627670248101896 | [1,1,0.92,0.92,0.68,0.35,0.36,0.34,0.35,0.35] | 0 | 1 | [1,1,1,1,1,1,1,1,1,1] | [1,1,0.97,0.95,0.87,0.76,0.68,0.62,0.57,0.55] | 2.1442872927798353 | 0.9992926259506063 | 2.928334045410156 | 1761660056 | my_kb3 | 2025-10-28 14:00:56.438344 |
+
+---
+
+
+## ⚙️ Installation
+
+Follow these steps to set up and run **MindSpark AI** locally:
+
+---
+
+### 🧩 1. Clone the GitHub Repository
+```bash
 git clone https://github.com/yourusername/mindspark-ai.git
 cd mindspark-ai
+```
+---
 
-Setup virtual environment
+### 🧱 2. Create a Virtual Environment
+
+```bash
 python -m venv .venv
-source .venv/bin/activate    # (Linux/Mac)
-.venv\Scripts\activate       # (Windows)
+```
+---
 
-Install dependencies
+Activate the environment:
+
+- On Windows:
+```bash
+.venv\Scripts\activate
+```
+- On Linux / Mac:
+
+```bash
+source .venv/bin/activate
+```
+
+---
+
+### 📦 3. Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 
-Run Streamlit App
+---
+
+### 🚀 4. Run the Streamlit App
+
+```bash
 streamlit run app.py
+```
