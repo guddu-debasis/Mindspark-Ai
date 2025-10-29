@@ -144,6 +144,9 @@ streamlit run app.py
 ```
 
 ---
+## Blog
+https://dev.to/debasis_panda_31e768f5e44/building-mindspark-ai-the-future-of-smart-learning-with-flashcards-and-quizzes-4gp1
+
 
 ## 🎬 Demo Video  
 [![Watch on X]](https://x.com/DebasisPan54565/status/1983194370171121886?t=nY5EfeqU88pFuD9dmQU8aA&s=19)
